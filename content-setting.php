@@ -46,6 +46,7 @@
 	$WidgetMaster_Border_Radius = get_option('WidgetMaster_Border_Radius');
         
         $WidgetMaster_Session_Expiration = get_option('WidgetMaster_Session_Expiration');
+        if(strlen($WidgetMaster_Session_Expiration) < 1){$WidgetMaster_Session_Expiration = 14400;}
 	
 	if (isset($_POST['WidgetMaster_form_submit']) && $_POST['WidgetMaster_form_submit'] == 'yes')
 	{
