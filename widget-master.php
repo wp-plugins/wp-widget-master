@@ -205,15 +205,15 @@ function WidgetMaster()
         
 
 
-//    if(!wp_script_is('jquery')) {
-//        function mh_load_my_script() {
-//             wp_enqueue_script( 'widget-master-jquery', get_option('siteurl') . '/wp-content/plugins/widget-master/jquery-1.11.3.min.js', array('jquery'), '1.0.1' );
-//        }
-//
-//        add_action( 'wp_enqueue_scripts', 'mh_load_my_script' );
-//
-//
-//    }
+    if(!wp_script_is('jquery')) {
+        function mh_load_my_script() {
+             wp_enqueue_script( 'widget-master-jquery', get_option('siteurl') . '/wp-content/plugins/widget-master/jquery-1.11.3.min.js', array('jquery'), '1.0.1' );
+        }
+
+        add_action( 'wp_enqueue_scripts', 'mh_load_my_script' );
+
+
+    }
 
 }
 
