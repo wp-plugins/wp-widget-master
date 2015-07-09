@@ -55,6 +55,8 @@ First version
 
 = 1.1 =
 Easily Hide or show widgets on specified pages. Choose when adding/editing widgets.
+Turn On/Off the main feature(Open/Close) widgets per session at all.
+Set session expiration time.
 
 == Upgrade Notice ==
 
