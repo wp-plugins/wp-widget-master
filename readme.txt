@@ -6,7 +6,7 @@ Plugin URI: https://awmcteam.wordpress.com/2015/06/29/widget-master/
 Tags: track visitors, widget management, show/hide widgets, awmcteam
 Requires at least: 3.4
 Tested up to: 4.2.2
-Stable tag: 1.0
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -53,9 +53,15 @@ Visitor can hide widgets per PHP session.
 
 First version
 
+= 1.1 =
+Easily Hide or show widgets on specified pages. Choose when adding/editing widgets.
+
 == Upgrade Notice ==
 
 = 1.0 =
-
 First version
+= 1.1 =
+Easily Hide or show widgets on specified pages. Choose when adding/editing widgets.
+Turn On/Off the main feature(Open/Close) widgets per session at all.
+Set session expiration time.
 

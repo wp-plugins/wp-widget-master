@@ -100,6 +100,10 @@ msgstr ""
 msgid "Widget Master report"
 msgstr ""
 
+#: ../content-setting.php:101
+msgid "Widget Master features"
+msgstr ""
+
 #: ../content-setting.php:102
 msgid "On archive page display"
 msgstr ""

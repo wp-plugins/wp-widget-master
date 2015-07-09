@@ -17,10 +17,16 @@ include 'includes/wp-session-manager.php';
 
 
 $wp_session = WP_Session::get_instance();
-add_filter( 'wp_session_expiration', function() { return 360 * 360; } ); // Set expiration to 
+$WM_session_expiration = get_option('WidgetMaster_Session_Expiration');
+add_filter( 'wp_session_expiration', function() { return $WM_session_expiration * 360; } ); // Set expiration to 
 
 function WidgetMaster()
 {    
+    $show_hide_feature_status = get_option('WidgetMaster_Turn_On_Off_Features');
+    if($show_hide_feature_status == "ON"){include 'features/hide-display-widgets.php';}
+    
+    $Open_Close_Main_Feature_status = get_option('WidgetMaster_Open_Close_Main_Feature');
+    if($Open_Close_Main_Feature_status == "OFF"){return;}
     
     if (  is_admin() ) return; 
     
@@ -206,11 +212,11 @@ function WidgetMaster()
 
 
     if(!wp_script_is('jquery')) {
-        function mh_load_my_script() {
+        function WM_load_my_script() {
              wp_enqueue_script( 'widget-master-jquery', get_option('siteurl') . '/wp-content/plugins/widget-master/jquery-1.11.3.min.js', array('jquery'), '1.0.1' );
         }
 
-        add_action( 'wp_enqueue_scripts', 'mh_load_my_script' );
+        add_action( 'wp_enqueue_scripts', 'WM_load_my_script' );
 
 
     }
@@ -227,6 +233,11 @@ function WidgetMaster_install()
 	add_option('WidgetMaster_On_Pages', "YES");
 	add_option('WidgetMaster_On_Archives', "YES");
 	add_option('WidgetMaster_On_Search', "YES");
+        
+        add_option('WidgetMaster_Session_Expiration', "14400");
+        
+        add_option('WidgetMaster_Turn_On_Off_Features', "ON");
+        add_option('WidgetMaster_Open_Close_Main_Feature', "ON");
         
 	add_option('WidgetMaster_Icon_Open', "+");
         add_option('WidgetMaster_Icon_Close', "-");

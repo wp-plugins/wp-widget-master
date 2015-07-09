@@ -1,15 +1,19 @@
 <?php
     wp_enqueue_style( 'optionscss', plugin_dir_url( __FILE__ ) .'style.css' );
-    global $wpdb;
-    $table_name = $wpdb->base_prefix . 'options';
-    $querystr = "
-        SELECT * 
-        FROM ".$table_name."
-        WHERE option_name LIKE 'WM_widget_name%'
-        ORDER BY `".$table_name."`.`option_value` DESC
-     ";
-
-     $widgets = $wpdb->get_results($querystr, OBJECT);
+    
+    $WidgetMaster_Turn_On_Off_Features = get_option('WidgetMaster_Turn_On_Off_Features');
+    $WidgetMaster_Open_Close_Main_Feature = get_option('WidgetMaster_Open_Close_Main_Feature');
+    
+    
+    if (isset($_POST['WidgetMaster_features_submit']) && $_POST['WidgetMaster_features_submit'] == 'yes')
+    {
+        $WidgetMaster_Turn_On_Off_Features = sanitize_text_field($_POST['WidgetMaster_Turn_On_Off_Features']);
+        $WidgetMaster_Open_Close_Main_Feature = sanitize_text_field($_POST['WidgetMaster_Open_Close_Main_Feature']);
+        
+        update_option('WidgetMaster_Turn_On_Off_Features', $WidgetMaster_Turn_On_Off_Features );
+        update_option('WidgetMaster_Open_Close_Main_Feature', $WidgetMaster_Open_Close_Main_Feature );
+    }
+    
      //var_dump($widgets);
 ?>
 
@@ -23,36 +27,53 @@
               <li><a href="<?php echo esc_url( get_admin_url(null, 'options-general.php?page=wp-widget-master/widget-master.php&report') );?>">Report</a></li>
               <li class="active"><a href="<?php echo esc_url( get_admin_url(null, 'options-general.php?page=wp-widget-master/widget-master.php&turn_on_off_features') );?>">Turn On/Off features</a></li>
           </ul>
-          <h3><?php _e('Widget Master report', 'widget-master'); ?></h3>
-          <?php
-            if(empty($widgets)) echo "<h4 class='no-results'>No tracking registered yet :(</h4>";
-          ?>
-          <!--<table class="wp-list-table widefat">
-                <thead>
-                <tr>
-                    <th scope="col" class="manage-column"><strong>Widget name</strong></th>
-                    <th scope="col" class="manage-column"><strong>How many times have been closed</strong></th>	
-                </tr>
-                </thead>
-                <tbody id="the-list">
-                    
-                        <?php
-                            //foreach ($widgets as $widget){ ?>
-                                <tr  class="iedit author-self  type-post status-publish format-standard hentry ">
-                                    <td><strong><?php //echo substr($widget->option_name, 15);?></strong></td>
-                                    <td><strong><?php //echo $widget->option_value;?></strong></td>
-                                </tr>
-                        <?php //}?>
-                        
-                    
-                </tbody>
-          </table>-->
-          UNDER CONSTRUCTION
+          <h3><?php _e('Widget Master features', 'widget-master'); ?></h3>
+          
+          <form name="sdp_form" method="post" action="">
+		<div style="height:5px;"></div>
+		<h4>Choose what features of Widget Master you want to use</h4>
+		
+                <p> <h2 style="display:inline;">1(Base feature).</h2> Open/Close widgets ability for visitors.</p>
+		
+		<label for="tag-title">Open/Close widgets</label>
+		<select name="WidgetMaster_Open_Close_Main_Feature" id="WidgetMaster_Open_Close_Main_Feature">
+			<option value='ON' <?php if($WidgetMaster_Open_Close_Main_Feature == 'ON') { echo 'selected' ; } ?>>ON</option>
+			<option value='OFF' <?php if($WidgetMaster_Open_Close_Main_Feature == 'OFF') { echo 'selected' ; } ?>>OFF</option>
+		</select>
+                
+                <br /><br />
+                
+		<p> <h2 style="display:inline;">1.</h2>Hide or show widgets on specified pages. When you add some widget to some sidebar at the bottom you will see new options. There you can show/hide widget on every site page.</p>
+		
+		<label for="tag-title">Hide/Show widgets</label>
+		<select name="WidgetMaster_Turn_On_Off_Features" id="WidgetMaster_Turn_On_Off_Features">
+			<option value='ON' <?php if($WidgetMaster_Turn_On_Off_Features == 'ON') { echo 'selected' ; } ?>>ON</option>
+			<option value='OFF' <?php if($WidgetMaster_Turn_On_Off_Features == 'OFF') { echo 'selected' ; } ?>>OFF</option>
+		</select>
+                
+                <br /><br />
+                <!--
+		<p> <h2 style="display:inline;">2.</h2> xxx</p>
+		
+		<label for="tag-title">xxx</label>
+		<select name="WidgetMaster_On_Archives" id="WidgetMaster_On_Archives">
+			<option value='ON' <?php  ?>>ON</option>
+			<option value='OFF' <?php  ?>>OFF</option>
+		</select>
+		<p></p>
+		-->
+		
+		<br />		
+		<input type="hidden" name="WidgetMaster_features_submit" value="yes"/>
+		<input name="WidgetMaster_submit" id="WidgetMaster_submit" class="button add-new-h2" value="Update Features" type="submit" />
+		<input name="Help" lang="publish" class="button add-new-h2" onclick="window.open('https://awmcteam.wordpress.com/2015/06/29/widget-master/');" value="<?php _e('Help', 'widget-master'); ?>" type="button" />
+		<?php wp_nonce_field('WidgetMaster_form_setting'); ?>
+	</form>
           
           
           
     </div>
-    <p><br /><br /><br /></p>
+    <p><br /><br /><br /><br /><br /><br /><br /></p>
 
     
 </div>

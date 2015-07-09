@@ -44,6 +44,8 @@
         $WidgetMaster_Icon_color = get_option('WidgetMaster_Icon_color');
         $WidgetMaster_Icon_Bg_color = get_option('WidgetMaster_Icon_Bg_color');
 	$WidgetMaster_Border_Radius = get_option('WidgetMaster_Border_Radius');
+        
+        $WidgetMaster_Session_Expiration = get_option('WidgetMaster_Session_Expiration');
 	
 	if (isset($_POST['WidgetMaster_form_submit']) && $_POST['WidgetMaster_form_submit'] == 'yes')
 	{
@@ -64,6 +66,8 @@
                 $WidgetMaster_Icon_color = sanitize_text_field($_POST['WidgetMaster_Icon_color']);if(strlen($WidgetMaster_Icon_color) > 6)$WidgetMaster_Icon_color = substr( $WidgetMaster_Icon_color, 0, 6 );
                 $WidgetMaster_Icon_Bg_color = sanitize_text_field($_POST['WidgetMaster_Icon_Bg_color']);if(strlen($WidgetMaster_Icon_Bg_color) > 6)$WidgetMaster_Icon_Bg_color = substr( $WidgetMaster_Icon_Bg_color, 0, 6 );
 		$WidgetMaster_Border_Radius = intval($_POST['WidgetMaster_Border_Radius']);
+                
+                $WidgetMaster_Session_Expiration = intval($_POST['WidgetMaster_Session_Expiration']);
 		
 		update_option('WidgetMaster_On_Homepage', $WidgetMaster_On_Homepage );
 		update_option('WidgetMaster_On_Posts', $WidgetMaster_On_Posts );
@@ -79,6 +83,7 @@
 		update_option('WidgetMaster_Icon_color', $WidgetMaster_Icon_color );
                 update_option('WidgetMaster_Icon_Bg_color', $WidgetMaster_Icon_Bg_color );
 		update_option('WidgetMaster_Border_Radius', $WidgetMaster_Border_Radius );
+                update_option('WidgetMaster_Session_Expiration', $WidgetMaster_Session_Expiration );
 		
 		?>
 		<div class="updated fade">
@@ -179,7 +184,11 @@
 		</select>
 		<p><?php _e('Select YES if you need to display on archive pages.', 'widget-master'); ?></p>
 		
+                <label for="tag-title">Session expiration time</label>
+		<input name="WidgetMaster_Session_Expiration" type="text" id="WidgetMaster_Session_Expiration" value="<?php echo $WidgetMaster_Session_Expiration; ?>" size="5"  />
+		<p>Set how long do you want to save opened/closed widgets, then reset. Default is 14400 minutes(10 days)</p>
 		
+                
 		<br />		
 		<input type="hidden" name="WidgetMaster_form_submit" value="yes"/>
 		<input name="WidgetMaster_submit" id="WidgetMaster_submit" class="button add-new-h2" value="<?php _e('Update All Details', 'widget-master'); ?>" type="submit" />

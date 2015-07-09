@@ -26,6 +26,8 @@
           <h3><?php _e('Widget Master report', 'widget-master'); ?></h3>
           <?php
             if(empty($widgets)) echo "<h4 class='no-results'>No tracking registered yet :(</h4>";
+            $Open_Close_Main_Feature_status = get_option('WidgetMaster_Open_Close_Main_Feature');
+            if($Open_Close_Main_Feature_status == "OFF"){echo "<h4 class='no-results'>Tracking stopped. The main feature is turned off. :(</h4>";}
           ?>
           <table class="wp-list-table widefat">
                 <thead>
