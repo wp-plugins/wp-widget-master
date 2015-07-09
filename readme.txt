@@ -43,7 +43,7 @@ Visitor can hide widgets per PHP session.
 == Screenshots ==
 
 1. Basic settings.
-
+1. Reports.
 
 == Changelog ==
 
