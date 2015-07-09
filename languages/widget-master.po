@@ -1,0 +1,171 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Widget Master\n"
+"POT-Creation-Date: 2015-06-30 13:41+0800\n"
+"PO-Revision-Date: 2015-06-30 13:41+0800\n"
+"Last-Translator: \n"
+"Language-Team: www.awmcteam.wordpress.com <www.awmcteam.wordpress.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../content-setting.php:5 ../widget-master.php:107
+#: ../widget-master.php:200 ../widget-master.php:200
+msgid "Widget Master"
+msgstr ""
+
+#: ../content-setting.php:47
+msgid "Details successfully updated."
+msgstr ""
+
+#: ../content-setting.php:52
+msgid "Widget Master Icon styles"
+msgstr ""
+
+#: ../content-setting.php:55
+msgid "Align the open/close button to the left or right of the title AND set the padding from side choosen. This can be also negative value, f.x. -15px."
+msgstr ""
+
+#: ../content-setting.php:57
+msgid "Choose the open/close icon color"
+msgstr ""
+
+#: ../content-setting.php:59
+msgid "Choose the open/close icon border color or leave empty if you want to use border."
+msgstr ""
+
+#: ../content-setting.php:61
+msgid "Choose the open/close icon background color"
+msgstr ""
+
+#: ../content-setting.php:63
+msgid "Set the open/close icon border-radius in pixels"
+msgstr ""
+
+#: ../content-setting.php:65
+msgid ""
+"This box is to add the contact us Image Button or Text, Entered value will "
+"display in the front end."
+msgstr ""
+
+#: ../content-setting.php:68
+msgid "Choose on what pages you want to turn on Widget Master"
+msgstr ""
+
+#: ../content-setting.php:70
+msgid "The maximize icon symbol or text"
+msgstr ""
+
+#: ../content-setting.php:72
+msgid "The minimize icon symbol or text"
+msgstr ""
+
+#: ../content-setting.php:74
+msgid "On home page display"
+msgstr ""
+
+#: ../content-setting.php:79
+msgid "Select YES if you need to display on home page."
+msgstr ""
+
+#: ../content-setting.php:81
+msgid "On posts display"
+msgstr ""
+
+#: ../content-setting.php:86
+msgid "Select YES if you need to display on posts."
+msgstr ""
+
+#: ../content-setting.php:88
+msgid "On pages display"
+msgstr ""
+
+#: ../content-setting.php:93
+msgid "Select YES if you need to display on wordpress pages."
+msgstr ""
+
+#: ../content-setting.php:95
+msgid "On search page display"
+msgstr ""
+
+#: ../content-setting.php:100
+msgid "Select YES if you need to display on search pages."
+msgstr ""
+
+#: ../content-setting.php:101
+msgid "Widget Master report"
+msgstr ""
+
+#: ../content-setting.php:102
+msgid "On archive page display"
+msgstr ""
+
+#: ../content-setting.php:107
+msgid "Select YES if you need to display on archive pages."
+msgstr ""
+
+#: ../content-setting.php:109
+msgid "The zise of the symbols or text"
+msgstr ""
+
+#: ../content-setting.php:110
+msgid "Home URL"
+msgstr ""
+
+#: ../content-setting.php:112
+msgid ""
+"This home URL is for security check. We can submit the form only on this "
+"website. "
+msgstr ""
+
+#: ../content-setting.php:116
+msgid "Update All Details"
+msgstr ""
+
+#: ../content-setting.php:117
+msgid "Help"
+msgstr ""
+
+#: ../content-setting.php:121
+msgid "Plugin configuration option"
+msgstr ""
+
+#: ../content-setting.php:123
+msgid "Drag and drop the plugin widget to your sidebar."
+msgstr ""
+
+#: ../content-setting.php:124
+msgid "Add plugin in the posts or pages using short code."
+msgstr ""
+
+#: ../content-setting.php:125
+msgid "Add directly in to the theme using PHP code."
+msgstr ""
+
+#: ../content-setting.php:127 ../popup-contact-form.php:99
+msgid "Check official website for more information"
+msgstr ""
+
+#: ../content-setting.php:128 ../popup-contact-form.php:100
+msgid "click here"
+msgstr ""
+
+#: ../popup-contact-form.php:30 ../popup-contact-form.php:168
+msgid "Close"
+msgstr ""
+
+#: ../popup-contact-form.php:35 ../popup-contact-form.php:173
+msgid "Your Name"
+msgstr ""
+
+#: ../popup-contact-form.php:39 ../popup-contact-form.php:177
+msgid "Your Email"
+msgstr ""
+
+#: ../popup-contact-form.php:43 ../popup-contact-form.php:181
+msgid "Enter Your Message"
+msgstr ""
