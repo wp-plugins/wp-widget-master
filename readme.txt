@@ -37,9 +37,8 @@ Plugin configuration
 
 == Screenshots ==
 
-1. Front Screen. https://awmcteam.wordpress.com/2015/06/29/widget-master/
+1. Basic settings.
 
-2. Admin Screen. https://awmcteam.wordpress.com/2015/06/29/widget-master/
 
 == Changelog ==
 
