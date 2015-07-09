@@ -33,7 +33,7 @@
 		<div style="height:5px;"></div>
 		<h4>Choose what features of Widget Master you want to use</h4>
 		
-                <p> <h2 style="display:inline;">1(Base feature).</h2> Open/Close widgets ability for visitors.</p>
+                <p> <h2 style="display:inline;">1. (Base feature)</h2> Open/Close widgets ability for visitors.</p>
 		
 		<label for="tag-title">Open/Close widgets</label>
 		<select name="WidgetMaster_Open_Close_Main_Feature" id="WidgetMaster_Open_Close_Main_Feature">
@@ -43,7 +43,7 @@
                 
                 <br /><br />
                 
-		<p> <h2 style="display:inline;">1.</h2>Hide or show widgets on specified pages. When you add some widget to some sidebar at the bottom you will see new options. There you can show/hide widget on every site page.</p>
+		<p> <h2 style="display:inline;">2.</h2>Hide or show widgets on specified pages. When you add some widget to some sidebar at the bottom you will see new options. There you can show/hide widget on every site page.</p>
 		
 		<label for="tag-title">Hide/Show widgets</label>
 		<select name="WidgetMaster_Turn_On_Off_Features" id="WidgetMaster_Turn_On_Off_Features">
