@@ -3,7 +3,7 @@
 Plugin Name: Widget Master
 Description: Plugin allows user to to make all widgets hidden or visible per session on the website. Also you can track your widgets benefits as you can see how many times each widget has been cloosed by your visitors. Please set widget title to make it work with Widgets-Master.
 Author: Tigran Hovhannisyan
-Version: 1.0
+Version: 1.1
 Plugin URI: #
 Author URI: #
 Donate link: #
