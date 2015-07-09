@@ -35,6 +35,11 @@ Plugin configuration
 
 == Frequently Asked Questions ==
 
+= What is Widget Master? =
+The Widget Master plugin lets visitors to choose what widgets/blocks he want or wont to see on your pages.
+Visitor can hide widgets per PHP session.
+
+
 == Screenshots ==
 
 1. Basic settings.
