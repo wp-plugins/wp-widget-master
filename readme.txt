@@ -12,6 +12,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 The Widget Master plugin lets visitors to choose what widgets/blocks he want or wont to see on your pages.
 Visitor can hide widgets per PHP session.
+This is the main feature.
+This plugin manipulates your widgets.
 
 == Description ==
 
@@ -19,6 +21,8 @@ Visitor can hide widgets per PHP session.
 * [Contact](https://awmcteam.wordpress.com/contact-us/)		
 
 This plugin allows user to hide widgets that he wont to use on the WordPress website. This plug-in has many advantages. You can track your WIDGETS/BLOCKS PRODUCTIVITY by looking on Widgets Master reports. You can see how many times some block has been hidden by visitors. You can exclude widgets that you wont to let user to hide. Administration page available to manage options or see statistics.
+WP Widget Master allows you to hide widgets on specified pages. Change your sidebar content for different pages, categories, custom taxonomies etc.
+
 
 Plugin advantage
 
