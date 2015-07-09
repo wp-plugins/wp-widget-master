@@ -5,6 +5,11 @@
         include "report.php";
         
     }
+    if(isset($_GET['turn_on_off_features'])){
+        
+        include "turn_on_off_features.php";
+        
+    }
     
     wp_enqueue_style( 'optionscss', plugin_dir_url( __FILE__ ) .'style.css' );
     wp_enqueue_script( 'colorpickerjs', plugin_dir_url( __FILE__ ) .'colorpicker/colorpicker.js');
@@ -20,8 +25,9 @@
     </div>
     <h2><?php _e('Widget Master', 'widget-master'); ?></h2>
     <ul class="settings-nav">
-        <li class="active"><a href="<?php echo esc_url( get_admin_url(null, 'options-general.php?page=widget-master/widget-master.php') );?>">General</a></li>
+        <li class="active"><a href="<?php echo esc_url( get_admin_url(null, 'options-general.php?page=wp-widget-master/widget-master.php') );?>">General</a></li>
         <li><a href="<?php echo esc_url( get_admin_url(null, 'options-general.php?page=wp-widget-master/widget-master.php&report') );?>">Report</a></li>
+        <li><a href="<?php echo esc_url( get_admin_url(null, 'options-general.php?page=wp-widget-master/widget-master.php&turn_on_off_features') );?>">Turn On/Off features</a></li>
     </ul>
     <?php
 	$WidgetMaster_On_Homepage = get_option('WidgetMaster_On_Homepage');

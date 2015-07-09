@@ -20,14 +20,14 @@
           <h2><?php _e('Widget Master', 'widget-master'); ?></h2>
           <ul class="settings-nav">
               <li><a href="<?php echo esc_url( get_admin_url(null, 'options-general.php?page=wp-widget-master/widget-master.php') );?>">General</a></li>
-              <li class="active"><a href="<?php echo esc_url( get_admin_url(null, 'options-general.php?page=wp-widget-master/widget-master.php&report') );?>">Report</a></li>
-              <li><a href="<?php echo esc_url( get_admin_url(null, 'options-general.php?page=wp-widget-master/widget-master.php&turn_on_off_features') );?>">Turn On/Off features</a></li>
+              <li><a href="<?php echo esc_url( get_admin_url(null, 'options-general.php?page=wp-widget-master/widget-master.php&report') );?>">Report</a></li>
+              <li class="active"><a href="<?php echo esc_url( get_admin_url(null, 'options-general.php?page=wp-widget-master/widget-master.php&turn_on_off_features') );?>">Turn On/Off features</a></li>
           </ul>
           <h3><?php _e('Widget Master report', 'widget-master'); ?></h3>
           <?php
             if(empty($widgets)) echo "<h4 class='no-results'>No tracking registered yet :(</h4>";
           ?>
-          <table class="wp-list-table widefat">
+          <!--<table class="wp-list-table widefat">
                 <thead>
                 <tr>
                     <th scope="col" class="manage-column"><strong>Widget name</strong></th>
@@ -37,17 +37,17 @@
                 <tbody id="the-list">
                     
                         <?php
-                            foreach ($widgets as $widget){ ?>
+                            //foreach ($widgets as $widget){ ?>
                                 <tr  class="iedit author-self  type-post status-publish format-standard hentry ">
-                                    <td><strong><?php echo substr($widget->option_name, 15);?></strong></td>
-                                    <td><strong><?php echo $widget->option_value;?></strong></td>
+                                    <td><strong><?php //echo substr($widget->option_name, 15);?></strong></td>
+                                    <td><strong><?php //echo $widget->option_value;?></strong></td>
                                 </tr>
-                        <?php }?>
+                        <?php //}?>
                         
                     
                 </tbody>
-          </table>
-          
+          </table>-->
+          UNDER CONSTRUCTION
           
           
           
