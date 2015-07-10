@@ -20,10 +20,12 @@ This plugin manipulates your widgets.
 * [More Information](https://awmcteam.wordpress.com/2015/06/29/widget-master/)				
 * [Contact](https://awmcteam.wordpress.com/contact-us/)		
 
-* Hide/show widgets
+* Hide/show widgets.
+
 This plugin allows user to hide widgets that he wont to use on the WordPress website. This plug-in has many advantages. You can track your WIDGETS/BLOCKS PRODUCTIVITY by looking on Widgets Master reports. You can see how many times some block has been hidden by visitors. You can exclude widgets that you wont to let user to hide. Administration page available to manage options or see statistics.
 
-* Hide widgets on specific pages
+* Hide widgets on specific pages.
+
 WP Widget Master allows you to hide widgets on specified pages. Change your sidebar content for different pages, categories, custom taxonomies etc.
 
 
