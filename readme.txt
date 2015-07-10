@@ -29,14 +29,14 @@ This plugin allows user to hide widgets that he wont to use on the WordPress web
 WP Widget Master allows you to hide widgets on specified pages. Change your sidebar content for different pages, categories, custom taxonomies etc.
 
 
-Plugin advantage
+* Plugin advantage
 
-* Easy to configuration.
-* Full automated work after install.
+Easy to configuration.
+Full automated work after install.
 
-Plugin configuration
+* Plugin configuration
 
-* Go to the page Settings->Widget-master to see statistics and options.
+Go to the page Settings->Widget-master to see statistics and options.
 
 == Installation ==
 
