@@ -51,10 +51,11 @@ Visitor can hide widgets per PHP session.
 
 == Screenshots ==
 
-1. Basic settings.
+1. Example of wp-theme Orianna 1.1
 2. Reports.
 3. Example 1.
 4. Example 2.
+5. Basic settings.
 
 == Changelog ==
 

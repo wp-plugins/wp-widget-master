@@ -246,7 +246,7 @@ function WidgetMaster_install()
 	add_option('WidgetMaster_Icon_color', "b4b9be");
         add_option('WidgetMaster_Icon_padding', "7");
         add_option('WidgetMaster_Icon_Bg_color', "");
-        add_option('WidgetMaster_Icon_size', "25");
+        add_option('WidgetMaster_Icon_size', "10");
         add_option('WidgetMaster_Border_Radius', "0");
 	
 }
