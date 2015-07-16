@@ -60,7 +60,7 @@ Since version 2.0 there will be a lot of amazing widgets available in the plugin
 = Does the Widget Master compatible with any wordpress theme? =
 1. Currently the plugin can work only on widgets which have title. When the widget will be closed by user only the title will be shown with the icon/text to "open" widget again.
 If the widget hasn't title the open/close icon/text will not be appear to the widget.
-2. We tried to compute all normal widgets structures(html) that can be in the theme. We have tested the plugin on a lot of themes and it works great. But sometimes by some developers widgets structure can be bad way modified, then the plugin will add some tags to the widget structure. That can affect the widget design, even we have chosen inline HTML tags such as <span>.
+2. We tried to compute all normal widgets structures(html) that can be in the theme. We have tested the plugin on a lot of themes and it works great. But sometimes by some developers widgets structure can be bad way modified, then the plugin will add some tags to the widget structure. That can affect the widget design, even we have chosen inline HTML tags such as 'span'.
 
 == Screenshots ==
 
