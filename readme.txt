@@ -38,6 +38,10 @@ Full automated work after install.
 
 Go to the page Settings->Widget-master to see statistics and options.
 
+*** Widget pack
+Soon in the Widget Master plugin will be added a lot of amazing widgets.
+You will be able to enable/disable widgets and configure options and styles.
+
 == Installation ==
 
 [Installation](https://awmcteam.wordpress.com/2015/06/29/widget-master/)
