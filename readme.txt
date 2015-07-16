@@ -53,6 +53,10 @@ You will be able to enable/disable widgets and configure options and styles.
 The Widget Master plugin lets visitors to choose what widgets/blocks he want or wont to see on your pages.
 Visitor can hide widgets per PHP session.
 
+Also you can chose widgets visibility on specified pages/templates.
+
+Since version 2.0 there will be a lot of amazing widgets available in the plugin.
+
 = Does the Widget Master compatible with any wordpress theme? =
 1. Currently the plugin can work only on widgets which have title. When the widget will be closed by user the title will be shown with the icon/text of "open".
 If the widget hasn't title the open/close icon/text will not be appear to the widget.
