@@ -53,7 +53,7 @@ You will be able to enable/disable widgets and configure options and styles.
 The Widget Master plugin lets visitors to choose what widgets/blocks he want or wont to see on your pages.
 Visitor can hide widgets per PHP session.
 
-Also you can choose widgets visibility on specified pages/templates.
+Also the plugin adds availability to choose your widgets visibility on specified pages/templates.
 
 Since version 2.0 there will be a lot of amazing widgets available in the plugin.
 
