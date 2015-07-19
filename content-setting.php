@@ -10,6 +10,11 @@
         include "turn_on_off_features.php";
         
     }
+    if(isset($_GET['widgets_pack'])){
+        
+        include "widgets_pack.php";
+        
+    }
     
     wp_enqueue_style( 'optionscss', plugin_dir_url( __FILE__ ) .'style.css' );
     wp_enqueue_script( 'colorpickerjs', plugin_dir_url( __FILE__ ) .'colorpicker/colorpicker.js');
@@ -18,16 +23,22 @@
     
     //add_action( 'admin_enqueue_scripts', 'sh_load_my_script' );
 ?>
+<?php if(!isset($_GET['nomainpage'])):?>
 <div class="wrap">
     
-  <div class="form-wrap">
-    <div id="icon-plugins" class="icon32 icon32-posts-post"><br>
-    </div>
-    <h2><?php _e('Widget Master', 'widget-master'); ?></h2>
+    <div class="form-wrap">
+        <div id="icon-plugins" class="icon32 icon32-posts-post"><br>
+        </div>
+        <div class="clouds-sm">
+            <h2><?php _e('Widget Master', 'widget-master'); ?></h2>
+        </div>
+        
+    
     <ul class="settings-nav">
         <li class="active"><a href="<?php echo esc_url( get_admin_url(null, 'options-general.php?page=wp-widget-master/widget-master.php') );?>">General</a></li>
-        <li><a href="<?php echo esc_url( get_admin_url(null, 'options-general.php?page=wp-widget-master/widget-master.php&report') );?>">Report</a></li>
-        <li><a href="<?php echo esc_url( get_admin_url(null, 'options-general.php?page=wp-widget-master/widget-master.php&turn_on_off_features') );?>">Turn On/Off features</a></li>
+        <li><a href="<?php echo esc_url( get_admin_url(null, 'options-general.php?page=wp-widget-master/widget-master.php&report&nomainpage') );?>">Report</a></li>
+        <li><a href="<?php echo esc_url( get_admin_url(null, 'options-general.php?page=wp-widget-master/widget-master.php&turn_on_off_features&nomainpage') );?>">Turn On/Off features</a></li>
+        <li style="border-bottom:1px solid #81a844;"><a href="<?php echo esc_url( get_admin_url(null, 'options-general.php?page=wp-widget-master/widget-master.php&widgets_pack&nomainpage') );?>">Widgets Pack</a></li>
     </ul>
     <?php
 	$WidgetMaster_On_Homepage = get_option('WidgetMaster_On_Homepage');
@@ -190,11 +201,12 @@
 		<p>Set how long do you want to save opened/closed widgets, then reset. Default is 14400 minutes(10 days)</p>
 		
                 
-		<br />		
+		<br />	
+                <?php wp_nonce_field('WidgetMaster_form_setting'); ?>
 		<input type="hidden" name="WidgetMaster_form_submit" value="yes"/>
 		<input name="WidgetMaster_submit" id="WidgetMaster_submit" class="button add-new-h2" value="<?php _e('Update All Details', 'widget-master'); ?>" type="submit" />
 		<input name="Help" lang="publish" class="button add-new-h2" onclick="window.open('https://awmcteam.wordpress.com/2015/06/29/widget-master/');" value="<?php _e('Help', 'widget-master'); ?>" type="button" />
-		<?php wp_nonce_field('WidgetMaster_form_setting'); ?>
+		
 	</form>
   </div>
   <h3><?php _e('Plugin configuration option', 'widget-master'); ?></h3>
@@ -226,3 +238,4 @@ document.addEventListener("DOMContentLoaded",function(){
 });
 </script>
 
+<?php endif; ?>

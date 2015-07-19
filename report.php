@@ -17,11 +17,14 @@
     
     <div class="form-wrap">
       <div id="icon-plugins" class="icon32 icon32-posts-post"><br></div>
-          <h2><?php _e('Widget Master', 'widget-master'); ?></h2>
+          <div class="clouds-sm">
+                <h2><?php _e('Widget Master', 'widget-master'); ?></h2>
+            </div>
           <ul class="settings-nav">
               <li><a href="<?php echo esc_url( get_admin_url(null, 'options-general.php?page=wp-widget-master/widget-master.php') );?>">General</a></li>
-              <li class="active"><a href="<?php echo esc_url( get_admin_url(null, 'options-general.php?page=wp-widget-master/widget-master.php&report') );?>">Report</a></li>
-              <li><a href="<?php echo esc_url( get_admin_url(null, 'options-general.php?page=wp-widget-master/widget-master.php&turn_on_off_features') );?>">Turn On/Off features</a></li>
+              <li class="active"><a href="<?php echo esc_url( get_admin_url(null, 'options-general.php?page=wp-widget-master/widget-master.php&report&nomainpage') );?>">Report</a></li>
+              <li><a href="<?php echo esc_url( get_admin_url(null, 'options-general.php?page=wp-widget-master/widget-master.php&turn_on_off_features&nomainpage') );?>">Turn On/Off features</a></li>
+              <li style="border-bottom:1px solid #81a844;"><a href="<?php echo esc_url( get_admin_url(null, 'options-general.php?page=wp-widget-master/widget-master.php&widgets_pack&nomainpage') );?>">Widgets Pack</a></li>
           </ul>
           <h3><?php _e('Widget Master report', 'widget-master'); ?></h3>
           <?php

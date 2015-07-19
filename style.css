@@ -1,3 +1,20 @@
+@font-face {
+    font-family: 'barkentina_1regular';
+    src: url('fonts/barkentina_1-webfont.eot');
+    src: url('fonts/barkentina_1-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/barkentina_1-webfont.woff2') format('woff2'),
+         url('fonts/barkentina_1-webfont.woff') format('woff'),
+         url('fonts/barkentina_1-webfont.ttf') format('truetype'),
+         url('fonts/barkentina_1-webfont.svg#barkentina_1regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+
 #WidgetMaster_Border_Color, #WidgetMaster_Icon_color, #WidgetMaster_Icon_Bg_color{
         background-image:url(images/picker.png);
         background-position: right center;
@@ -9,24 +26,36 @@
     
     .wrap .settings-nav {
         background: #f6f6f6;
-        border-bottom: 1px solid #d6d6d6;
         padding: 5px 0 0 30px;
         margin: 0;
         font-size: 0;
+        margin-bottom:33px !important;
     }
+    
+    .wrap{
+        margin-left: -30px !important;
+        margin-right: -30px !important;
+    }
+    
     .wrap .settings-nav li.active {
-        background: #f0f0f0;
         border-bottom-color: #f0f0f0;
+        background-color: #81a844;
+        
       }
+      
+      .wrap .settings-nav li.active a{
+          color:#fff;
+      }
+      
       .wrap .settings-nav li {
         display: inline-block;
         margin: 0 0 -1px 0;
-        background: #f6f6f6;
+        background: #fff;
         line-height: 1em;
         font-size: 12px;
         position: relative;
-        border: 1px solid #d6d6d6;
-        border-width: 1px 1px 1px 1px;
+        box-shadow: 0 0 0 rgba(0,0,0,0.03);
+        transition: opacity 2s ease-in;
         transition: all 0.2s;
       }
       .wrap .settings-nav li a {
@@ -38,20 +67,76 @@
         box-shadow: none !important;
       }
      
+      
+      #wpcontent{
+            background: #f9f9f9;
+      }
+      
+      
+      #wpbody-content .wrap .clouds-sm {
+        height: 100px;
+        
+        position: relative;
+        text-align: center;
+        z-index: 1;
+        background-color: #81a844;
+        background-image: linear-gradient(top, #81a844, #89b348);
+        padding-top: 70px;
+      }
+      
+      .clouds-sm, .wrap > ul,.wrap > h3, .wrap > form, .wrap > ol, .wrap > p, .wrap .form-wrap > ul,  .wrap .form-wrap > h3, .wrap .form-wrap > form, .wrap .no-results{
+            padding-left: 30px;
+            
+      }
+      
+      .wrap .form-wrap > form{
+          width:87%;
+      }
+      
+      .wrap .form-wrap > table{
+          background:#f9f9f9;
+          padding-left: 30px;
+      }
+      .clouds-sm h2{
+            text-align:left;
+            clear: both;
+            z-index: 10;
+            position: absolute;
+            top:52px;
+            color:#f9f9f9;
+            font-family: 'barkentina_1regular';
+            font-size: 42px;
+            font-weight: bold;
+        }
+      .clouds-sm:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin-bottom: -1px;
+        width: 100%;
+        height: 137px;
+        background: url("images/the-cloud-sm.svg") center bottom repeat-x;
+        pointer-events: none;
+        z-index: 2;
+      }
+      
+      
       .wrap  .settings-nav li a{
             display: block;
             text-decoration: none;
             color: #555;
             padding: 12px 25px;
             font-weight: bold;
-            font-size: 12px;
+            font-size: 15px;
       }
       .form-wrap > h2, .form-wrap > .settings-nav{
-          background:#f6f6f6;
+          background:#f9f9f9;
           margin:-25px;
           margin-bottom:0px;
           padding:25px;
           padding-bottom:0px;
+          padding-top:10px;
           margin-top:0px;
       }
       .form-wrap{
@@ -64,5 +149,16 @@
 	  
       .no-results{color: #a00;}
       table #the-list tr:nth-child(odd){
-            background-color: #f9f9f9;
+            background-color: #F0EDED;
+      }
+      
+      #widgetsPackSection{
+          background:#fff;
+          min-height:450px;
+      }
+      
+      #widgetsPackSection h2{
+          text-align:center;
+          padding-top:220px;
+          opacity:0.7;
       }
