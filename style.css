@@ -86,6 +86,7 @@
 	  #wpbody-content .wrap .clouds-sm .fade{
 			margin-top: 153px;
 			padding: 0px;
+			display:block;
 	  }
       
       .clouds-sm, .wrap > ul,.wrap > h3, .wrap > form, .wrap > ol, .wrap > p, .wrap .form-wrap > ul,  .wrap .form-wrap > h3, .wrap .form-wrap > form, .wrap .no-results{
