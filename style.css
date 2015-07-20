@@ -83,6 +83,10 @@
         background-image: linear-gradient(top, #81a844, #89b348);
         padding-top: 70px;
       }
+	  #wpbody-content .wrap .clouds-sm .fade{
+			margin-top: 153px;
+			padding: 0px;
+	  }
       
       .clouds-sm, .wrap > ul,.wrap > h3, .wrap > form, .wrap > ol, .wrap > p, .wrap .form-wrap > ul,  .wrap .form-wrap > h3, .wrap .form-wrap > form, .wrap .no-results{
             padding-left: 30px;
