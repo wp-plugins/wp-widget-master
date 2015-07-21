@@ -3,7 +3,7 @@ Contributors: www.awmcteam.wordpress.com, awmcteam
 Donate link: https://awmcteam.wordpress.com/2015/06/29/widget-master/
 Author URI: https://awmcteam.wordpress.com/2015/06/29/widget-master/
 Plugin URI: https://awmcteam.wordpress.com/2015/06/29/widget-master/
-Tags: track visitors, widget management, show/hide widgets, sidebar, awmcteam, filter, hide, page, plugin, show, sidebar, widget, widget context, widget logic, widgets, wordpress, analytics, automatic, stats, statistics
+Tags: track visitors, widget management, show/hide widgets, sidebar, awmcteam, filter, hide, page, plugin, show, sidebar, widget, widget context, widget logic, widgets, wordpress, analytics, automatic, stats, statistics, widget-only
 Requires at least: 3.4
 Tested up to: 4.2.2
 Stable tag: 1.2
