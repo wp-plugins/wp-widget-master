@@ -5,7 +5,7 @@ Author URI: https://awmcteam.wordpress.com/2015/06/29/widget-master/
 Plugin URI: https://awmcteam.wordpress.com/2015/06/29/widget-master/
 Tags: track visitors, widget management, show/hide widgets, sidebar, awmcteam, filter, hide, page, plugin, show, sidebar, widget, widget context, widget logic, widgets, wordpress, analytics, automatic, stats, statistics, widget-only
 Requires at least: 3.4
-Tested up to: 4.2.4
+Tested up to: 4.3
 Stable tag: 1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
